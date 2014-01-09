@@ -109,19 +109,19 @@ am__relativize = \
     dir1=`echo "$$dir1" | sed -e "$$sed_rest"`; \
   done; \
   reldir="$$dir2"
-ACLOCAL = ${SHELL} /home/sshilko/Miner/cpuminer-2.3.2/missing --run aclocal-1.11
+ACLOCAL = ${SHELL} /home/sshilko/git-miner/cpuminer-2.3.2/missing --run aclocal-1.11
 ALLOCA = 
 AMTAR = $${TAR-tar}
-AUTOCONF = ${SHELL} /home/sshilko/Miner/cpuminer-2.3.2/missing --run autoconf
-AUTOHEADER = ${SHELL} /home/sshilko/Miner/cpuminer-2.3.2/missing --run autoheader
-AUTOMAKE = ${SHELL} /home/sshilko/Miner/cpuminer-2.3.2/missing --run automake-1.11
+AUTOCONF = ${SHELL} /home/sshilko/git-miner/cpuminer-2.3.2/missing --run autoconf
+AUTOHEADER = ${SHELL} /home/sshilko/git-miner/cpuminer-2.3.2/missing --run autoheader
+AUTOMAKE = ${SHELL} /home/sshilko/git-miner/cpuminer-2.3.2/missing --run automake-1.11
 AWK = mawk
 CC = gcc -std=gnu99
 CCAS = gcc -std=gnu99
 CCASDEPMODE = depmode=gcc3
-CCASFLAGS = -O3 -march=corei7-avx -pipe -mfpmath=sse -mtune=corei7-avx -flto
+CCASFLAGS = -Ofast -march=corei7-avx -pipe -mfpmath=sse -funroll-loops -mtune=corei7-avx -flto
 CCDEPMODE = depmode=gcc3
-CFLAGS = -O3 -march=corei7-avx -pipe -mfpmath=sse -mtune=corei7-avx -flto
+CFLAGS = -Ofast -march=corei7-avx -pipe -mfpmath=sse -funroll-loops -mtune=corei7-avx -flto
 CPP = gcc -std=gnu99 -E
 CPPFLAGS = 
 CYGPATH_W = echo
@@ -146,7 +146,7 @@ LIBOBJS =
 LIBS = 
 LTLIBOBJS = 
 MAINT = #
-MAKEINFO = ${SHELL} /home/sshilko/Miner/cpuminer-2.3.2/missing --run makeinfo
+MAKEINFO = ${SHELL} /home/sshilko/git-miner/cpuminer-2.3.2/missing --run makeinfo
 MKDIR_P = /bin/mkdir -p
 OBJEXT = o
 PACKAGE = cpuminer
@@ -166,10 +166,10 @@ STRIP =
 VERSION = 2.3.2
 WS2_LIBS = 
 _libcurl_config = 
-abs_builddir = /home/sshilko/Miner/cpuminer-2.3.2/compat
-abs_srcdir = /home/sshilko/Miner/cpuminer-2.3.2/compat
-abs_top_builddir = /home/sshilko/Miner/cpuminer-2.3.2
-abs_top_srcdir = /home/sshilko/Miner/cpuminer-2.3.2
+abs_builddir = /home/sshilko/git-miner/cpuminer-2.3.2/compat
+abs_srcdir = /home/sshilko/git-miner/cpuminer-2.3.2/compat
+abs_top_builddir = /home/sshilko/git-miner/cpuminer-2.3.2
+abs_top_srcdir = /home/sshilko/git-miner/cpuminer-2.3.2
 ac_ct_CC = gcc
 am__include = include
 am__leading_dot = .
@@ -196,7 +196,7 @@ host_vendor = pc
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/sshilko/Miner/cpuminer-2.3.2/install-sh
+install_sh = ${SHELL} /home/sshilko/git-miner/cpuminer-2.3.2/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale

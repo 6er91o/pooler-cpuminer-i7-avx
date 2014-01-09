@@ -1,14 +1,10 @@
-Miner compiled for i7 with AVX
+Miner compiled for i7 with AVX, 32 bit
 
-$ ./configure CFLAGS="-O3 -march=corei7-avx -pipe -mfpmath=sse -mtune=corei7-avx -flto"
+$ ./configure CFLAGS="-Ofast -march=corei7-avx -pipe -mfpmath=sse -funroll-loops -mtune=corei7-avx -flto" CXXFLAGS="${CFLAGS}"
 
 https://bitcointalk.org/index.php?topic=55038.0
 
-$ ./minerd --url=http://myminingpool.com:9332 --userpass=my.worker:password
-$ ./minerd --url=stratum+tcp://myminingpool.com:3333 --userpass=my.worker:password
+$ ./minerd -o stratum+tcp://abc.host.com:3333 -u myname -p mypass
 
 http://gcc.gnu.org/gcc-4.6/changes.html
 http://wiki.gentoo.org/wiki/Safe_CFLAGS#Core_i3.2Fi5.2Fi7_IvyBridge
-
-make clean
-./configure CFLAGS="-O3 -march=corei7-avx -pipe -mfpmath=sse -mtune=corei7-avx -flto"
